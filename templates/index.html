@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Title Aggregator</title>
+    </head>
+    <body>
+        <ul>
+            {% for headline in headlines %}
+            <li>
+                <a href="{{ headline[1] }}">{{ headline[0] }}</a>
+                {% endfor %}
+            </li>
+        </ul>
+    </body>
+</html>
